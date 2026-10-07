@@ -40,7 +40,7 @@ class _CampaignSheetState extends State<CampaignSheet> {
                 width: 38,
                 height: 4,
                 decoration: BoxDecoration(
-                  color: const Color(0xFFDCE4DF),
+                  color: const Color(0xFFDCEAF5),
                   borderRadius: BorderRadius.circular(3),
                 ),
               ),
@@ -49,7 +49,7 @@ class _CampaignSheetState extends State<CampaignSheet> {
             const Text(
               'Find your next leads',
               style: TextStyle(
-                color: Color(0xFF182A21),
+                color: Color(0xFF172B4D),
                 fontSize: 23,
                 fontWeight: FontWeight.w800,
                 letterSpacing: -0.5,
@@ -64,7 +64,7 @@ class _CampaignSheetState extends State<CampaignSheet> {
             const Text(
               'COMPANIES OR WEBSITES',
               style: TextStyle(
-                color: Color(0xFF687970),
+                color: Color(0xFF64748B),
                 fontSize: 10,
                 fontWeight: FontWeight.w700,
                 letterSpacing: 1,
@@ -180,7 +180,7 @@ class LeadDetailsSheet extends StatelessWidget {
               width: 38,
               height: 4,
               decoration: BoxDecoration(
-                color: const Color(0xFFDCE4DF),
+                color: const Color(0xFFDCEAF5),
                 borderRadius: BorderRadius.circular(3),
               ),
             ),
@@ -207,7 +207,7 @@ class LeadDetailsSheet extends StatelessWidget {
                     Text(
                       lead.name,
                       style: const TextStyle(
-                        color: Color(0xFF1B2923),
+                        color: Color(0xFF172B4D),
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
                       ),
@@ -296,7 +296,7 @@ class DetailRow extends StatelessWidget {
             child: Text(
               value,
               style: const TextStyle(
-                color: Color(0xFF26382F),
+                color: Color(0xFF29415F),
                 fontSize: 12,
                 fontWeight: FontWeight.w500,
               ),

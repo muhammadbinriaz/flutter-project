@@ -6,7 +6,7 @@ extension _AppChromeBottom on _LeadFlowHomeState {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(25, 12, 25, 13),
-      color: const Color(0xFFEAF5F0),
+      color: const Color(0xFFEAF6FF),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -50,7 +50,7 @@ extension _AppChromeBottom on _LeadFlowHomeState {
             value: progress,
             minHeight: 4,
             borderRadius: BorderRadius.circular(10),
-            backgroundColor: const Color(0xFFD3E4DC),
+            backgroundColor: const Color(0xFFD7EAFE),
             color: LeadsColors.forest,
           ),
         ],

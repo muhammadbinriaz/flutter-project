@@ -19,7 +19,7 @@ extension _InsightsProfileView on _LeadFlowHomeState {
               label: 'New',
               count: _newLeads,
               total: total,
-              color: const Color(0xFF73D3AB),
+              color: const Color(0xFF7DD3FC),
             ),
             InsightRow(
               label: 'Contacted',
@@ -95,7 +95,7 @@ extension _InsightsProfileView on _LeadFlowHomeState {
                   Text(
                     'Alex Khan',
                     style: TextStyle(
-                      color: Color(0xFF1B2B24),
+                      color: Color(0xFF172B4D),
                       fontWeight: FontWeight.w700,
                       fontSize: 16,
                     ),

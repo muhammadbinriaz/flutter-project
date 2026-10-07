@@ -22,18 +22,18 @@ class LeadsMvpApp extends StatelessWidget {
         fontFamily: 'Roboto',
         textTheme: const TextTheme(
           headlineMedium: TextStyle(
-            color: Color(0xFF15251F),
+            color: Color(0xFF172B4D),
             fontSize: 27,
             fontWeight: FontWeight.w700,
             letterSpacing: -0.8,
           ),
           titleLarge: TextStyle(
-            color: Color(0xFF15251F),
+            color: Color(0xFF172B4D),
             fontSize: 21,
             fontWeight: FontWeight.w700,
             letterSpacing: -0.4,
           ),
-          bodyMedium: TextStyle(color: Color(0xFF52615B), fontSize: 14),
+          bodyMedium: TextStyle(color: Color(0xFF52657A), fontSize: 14),
         ),
       ),
       home: const LeadFlowHome(),

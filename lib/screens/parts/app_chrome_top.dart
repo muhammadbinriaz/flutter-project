@@ -36,7 +36,7 @@ extension _AppChromeTop on _LeadFlowHomeState {
               Text(
                 'Leads MVP',
                 style: TextStyle(
-                  color: Color(0xFF20342C),
+                  color: Color(0xFF1E3A5F),
                   fontSize: 17,
                   fontWeight: FontWeight.w800,
                   letterSpacing: 1.2,
@@ -60,7 +60,7 @@ extension _AppChromeTop on _LeadFlowHomeState {
             tooltip: 'Notifications',
             onPressed: _showNotifications,
             style: IconButton.styleFrom(
-              foregroundColor: const Color(0xFF586D63),
+              foregroundColor: const Color(0xFF52657A),
               side: const BorderSide(color: LeadsColors.line),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(14),

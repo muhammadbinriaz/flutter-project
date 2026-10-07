@@ -23,14 +23,14 @@ String statusLabel(LeadStatus status) => switch (status) {
 Color statusColor(LeadStatus status) => switch (status) {
       LeadStatus.newLead => const Color(0xFFE5F3FB),
       LeadStatus.contacted => const Color(0xFFFFF0E0),
-      LeadStatus.qualified => const Color(0xFFE5F2EC),
+      LeadStatus.qualified => const Color(0xFFE0F2FE),
       LeadStatus.failed => const Color(0xFFFCE8E6),
     };
 
 Color statusInk(LeadStatus status) => switch (status) {
       LeadStatus.newLead => const Color(0xFF2777A4),
       LeadStatus.contacted => const Color(0xFFB66B23),
-      LeadStatus.qualified => const Color(0xFF427D64),
+      LeadStatus.qualified => const Color(0xFF2563EB),
       LeadStatus.failed => const Color(0xFFB3261E),
     };
 

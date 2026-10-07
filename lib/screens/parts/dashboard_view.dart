@@ -17,7 +17,7 @@ extension _DashboardView on _LeadFlowHomeState {
                 title: 'New leads',
                 value: '$_newLeads',
                 caption: 'Ready for outreach',
-                tint: const Color(0xFFE1F3EC),
+                tint: const Color(0xFFE0F2FE),
                 iconColor: LeadsColors.forest,
               ),
             ),
@@ -176,7 +176,7 @@ extension _DashboardView on _LeadFlowHomeState {
                   children: [
                     const Text(
                       'Pipeline value',
-                      style: TextStyle(color: Color(0xFFB9D6CC), fontSize: 13),
+                      style: TextStyle(color: Color(0xFFBFD7F5), fontSize: 13),
                     ),
                     const SizedBox(height: 7),
                     Text(
@@ -202,7 +202,7 @@ extension _DashboardView on _LeadFlowHomeState {
                 child: const Text(
                   'SAMPLE',
                   style: TextStyle(
-                    color: Color(0xFFD2E2DC),
+                    color: Color(0xFFD8E8F5),
                     fontSize: 9,
                     fontWeight: FontWeight.w700,
                     letterSpacing: 1,
@@ -216,7 +216,7 @@ extension _DashboardView on _LeadFlowHomeState {
             borderRadius: BorderRadius.circular(10),
             child: Row(
               children: [
-                _progressSegment(_newLeads, const Color(0xFF73D3AB)),
+                _progressSegment(_newLeads, const Color(0xFF7DD3FC)),
                 _progressSegment(_contactedLeads, const Color(0xFFFFC06D)),
                 _progressSegment(_qualifiedLeads, const Color(0xFFA797E6)),
               ],
@@ -228,7 +228,7 @@ extension _DashboardView on _LeadFlowHomeState {
             runSpacing: 8,
             children: [
               LegendItem(
-                color: const Color(0xFF73D3AB),
+                color: const Color(0xFF7DD3FC),
                 label: 'New',
                 count: _newLeads,
               ),

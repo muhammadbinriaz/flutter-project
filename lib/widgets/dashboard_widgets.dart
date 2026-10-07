@@ -47,7 +47,7 @@ class MetricCard extends StatelessWidget {
                 Text(
                   value,
                   style: const TextStyle(
-                    color: Color(0xFF17251F),
+                    color: Color(0xFF172B4D),
                     fontSize: 22,
                     fontWeight: FontWeight.w800,
                     height: 1.15,
@@ -149,7 +149,7 @@ class LegendItem extends StatelessWidget {
         const SizedBox(width: 6),
         Text(
           '$label  $count',
-          style: const TextStyle(color: Color(0xFFD2E2DC), fontSize: 10),
+          style: const TextStyle(color: Color(0xFFD8E8F5), fontSize: 10),
         ),
       ],
     );
@@ -189,7 +189,7 @@ class InsightRow extends StatelessWidget {
                 child: Text(
                   label,
                   style: const TextStyle(
-                    color: Color(0xFF33443B),
+                    color: Color(0xFF334E68),
                     fontSize: 13,
                     fontWeight: FontWeight.w600,
                   ),
@@ -198,7 +198,7 @@ class InsightRow extends StatelessWidget {
               Text(
                 '$count',
                 style: const TextStyle(
-                  color: Color(0xFF1B2923),
+                  color: Color(0xFF172B4D),
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -209,7 +209,7 @@ class InsightRow extends StatelessWidget {
             value: progress,
             minHeight: 6,
             borderRadius: BorderRadius.circular(8),
-            backgroundColor: const Color(0xFFEEF2F0),
+            backgroundColor: const Color(0xFFF0F6FC),
             color: color,
           ),
         ],
@@ -241,7 +241,7 @@ class PipelineDetailCard extends StatelessWidget {
           Text(
             title,
             style: const TextStyle(
-              color: Color(0xFF1B2923),
+              color: Color(0xFF172B4D),
               fontSize: 16,
               fontWeight: FontWeight.w700,
             ),
@@ -270,7 +270,7 @@ class SnapshotRow extends StatelessWidget {
           Text(
             value,
             style: const TextStyle(
-              color: Color(0xFF1B2923),
+              color: Color(0xFF172B4D),
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -319,7 +319,7 @@ class ProfileRow extends StatelessWidget {
                     Text(
                       title,
                       style: const TextStyle(
-                        color: Color(0xFF26382F),
+                        color: Color(0xFF29415F),
                         fontWeight: FontWeight.w600,
                         fontSize: 13,
                       ),

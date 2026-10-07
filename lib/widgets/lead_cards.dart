@@ -21,11 +21,11 @@ class LeadCard extends StatelessWidget {
   Color get _avatarColor {
     switch (lead.status) {
       case LeadStatus.newLead:
-        return const Color(0xFFE0F0F4);
+        return const Color(0xFFE0F2FE);
       case LeadStatus.contacted:
         return const Color(0xFFFFECD9);
       case LeadStatus.qualified:
-        return const Color(0xFFECE7F7);
+        return const Color(0xFFE0E7FF);
       case LeadStatus.failed:
         return const Color(0xFFFCE8E6);
     }
@@ -34,11 +34,11 @@ class LeadCard extends StatelessWidget {
   Color get _avatarInk {
     switch (lead.status) {
       case LeadStatus.newLead:
-        return const Color(0xFF39758D);
+        return const Color(0xFF0284C7);
       case LeadStatus.contacted:
-        return const Color(0xFFAA6A2B);
+        return const Color(0xFF2563EB);
       case LeadStatus.qualified:
-        return const Color(0xFF7564A9);
+        return const Color(0xFF6366F1);
       case LeadStatus.failed:
         return const Color(0xFFB3261E);
     }
@@ -85,7 +85,7 @@ class LeadCard extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
-                        color: Color(0xFF1B2923),
+                        color: Color(0xFF172B4D),
                         fontSize: 14,
                         fontWeight: FontWeight.w700,
                       ),
@@ -110,7 +110,7 @@ class LeadCard extends StatelessWidget {
                   Text(
                     lead.value > 0 ? formatCurrency(lead.value) : 'N/A',
                     style: const TextStyle(
-                      color: Color(0xFF1B2923),
+                      color: Color(0xFF172B4D),
                       fontWeight: FontWeight.w700,
                       fontSize: 14,
                     ),
@@ -164,7 +164,7 @@ class ContactButton extends StatelessWidget {
         tooltip: tooltip,
         onPressed: onPressed,
         style: IconButton.styleFrom(
-          foregroundColor: const Color(0xFF62746B),
+          foregroundColor: const Color(0xFF64748B),
           side: const BorderSide(color: LeadsColors.line),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(11)),
         ),
@@ -219,13 +219,13 @@ class LeadStatusFilterChip extends StatelessWidget {
         selected: selected,
         onSelected: (_) => onTap(),
         labelStyle: TextStyle(
-          color: selected ? LeadsColors.forest : const Color(0xFF697970),
+          color: selected ? LeadsColors.forest : const Color(0xFF64748B),
           fontSize: 11,
           fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
         ),
         backgroundColor: Colors.white,
         selectedColor: LeadsColors.mint,
-        side: BorderSide(color: selected ? const Color(0xFFCDE8DE) : LeadsColors.line),
+        side: BorderSide(color: selected ? const Color(0xFFCFE3FA) : LeadsColors.line),
         showCheckmark: false,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 4),
@@ -250,7 +250,7 @@ class EmptyLeads extends StatelessWidget {
           const Text(
             'No matching leads',
             style: TextStyle(
-              color: Color(0xFF1B2923),
+              color: Color(0xFF172B4D),
               fontWeight: FontWeight.w700,
               fontSize: 15,
             ),
@@ -282,9 +282,9 @@ class DemoNote extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
-        color: const Color(0xFFEDF5F1),
+        color: const Color(0xFFEDF7FF),
         borderRadius: BorderRadius.circular(17),
-        border: Border.all(color: const Color(0xFFDCEBE3)),
+        border: Border.all(color: const Color(0xFFDCEBFA)),
       ),
       child: Row(
         children: [
