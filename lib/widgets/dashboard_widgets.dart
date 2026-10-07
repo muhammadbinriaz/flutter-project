@@ -42,7 +42,7 @@ class MetricCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(title, style: const TextStyle(color: LeadsColors.muted, fontSize: 11)),
+                Text(title, style: const TextStyle(color: AppColors.muted, fontSize: 11)),
                 const SizedBox(height: 3),
                 Text(
                   value,
@@ -94,7 +94,7 @@ class SectionHeading extends StatelessWidget {
             children: [
               Text(title, style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: 3),
-              Text(subtitle, style: const TextStyle(color: LeadsColors.muted, fontSize: 12)),
+              Text(subtitle, style: const TextStyle(color: AppColors.muted, fontSize: 12)),
             ],
           ),
         ),
@@ -102,7 +102,7 @@ class SectionHeading extends StatelessWidget {
           TextButton(
             onPressed: onAction,
             style: TextButton.styleFrom(
-              foregroundColor: LeadsColors.forest,
+              foregroundColor: AppColors.primary,
               padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
               textStyle: const TextStyle(fontWeight: FontWeight.w700, fontSize: 12),
             ),
@@ -247,7 +247,7 @@ class PipelineDetailCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 4),
-          Text(subtitle, style: const TextStyle(color: LeadsColors.muted, fontSize: 11)),
+          Text(subtitle, style: const TextStyle(color: AppColors.muted, fontSize: 11)),
           ...rows,
         ],
       ),
@@ -266,7 +266,7 @@ class SnapshotRow extends StatelessWidget {
       padding: const EdgeInsets.only(top: 18),
       child: Row(
         children: [
-          Expanded(child: Text(label, style: const TextStyle(color: LeadsColors.muted))),
+          Expanded(child: Text(label, style: const TextStyle(color: AppColors.muted))),
           Text(
             value,
             style: const TextStyle(
@@ -306,11 +306,11 @@ class ProfileRow extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 14),
           decoration: const BoxDecoration(
-            border: Border(bottom: BorderSide(color: LeadsColors.line)),
+            border: Border(bottom: BorderSide(color: AppColors.border)),
           ),
           child: Row(
             children: [
-              Icon(icon, color: LeadsColors.forest, size: 22),
+              Icon(icon, color: AppColors.primary, size: 22),
               const SizedBox(width: 13),
               Expanded(
                 child: Column(
@@ -327,7 +327,7 @@ class ProfileRow extends StatelessWidget {
                     const SizedBox(height: 3),
                     Text(
                       subtitle,
-                      style: const TextStyle(color: LeadsColors.muted, fontSize: 10),
+                      style: const TextStyle(color: AppColors.muted, fontSize: 10),
                     ),
                   ],
                 ),
@@ -335,13 +335,13 @@ class ProfileRow extends StatelessWidget {
               Text(
                 trailing,
                 style: const TextStyle(
-                  color: LeadsColors.forest,
+                  color: AppColors.primary,
                   fontSize: 11,
                   fontWeight: FontWeight.w600,
                 ),
               ),
               const SizedBox(width: 4),
-              const Icon(Icons.chevron_right_rounded, color: LeadsColors.muted, size: 19),
+              const Icon(Icons.chevron_right_rounded, color: AppColors.muted, size: 19),
             ],
           ),
         ),

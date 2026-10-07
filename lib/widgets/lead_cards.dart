@@ -95,7 +95,7 @@ class LeadCard extends StatelessWidget {
                       lead.company,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(color: LeadsColors.muted, fontSize: 11),
+                      style: const TextStyle(color: AppColors.muted, fontSize: 11),
                     ),
                     const SizedBox(height: 9),
                     StatusPill(status: lead.status),
@@ -118,7 +118,7 @@ class LeadCard extends StatelessWidget {
                   const SizedBox(height: 4),
                   const Text(
                     'Est. value',
-                    style: TextStyle(color: LeadsColors.muted, fontSize: 9),
+                    style: TextStyle(color: AppColors.muted, fontSize: 9),
                   ),
                 ],
               ),
@@ -165,7 +165,7 @@ class ContactButton extends StatelessWidget {
         onPressed: onPressed,
         style: IconButton.styleFrom(
           foregroundColor: const Color(0xFF64748B),
-          side: const BorderSide(color: LeadsColors.line),
+          side: const BorderSide(color: AppColors.border),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(11)),
         ),
         icon: Icon(icon, size: 17),
@@ -219,13 +219,13 @@ class LeadStatusFilterChip extends StatelessWidget {
         selected: selected,
         onSelected: (_) => onTap(),
         labelStyle: TextStyle(
-          color: selected ? LeadsColors.forest : const Color(0xFF64748B),
+          color: selected ? AppColors.primary : const Color(0xFF64748B),
           fontSize: 11,
           fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
         ),
         backgroundColor: Colors.white,
-        selectedColor: LeadsColors.mint,
-        side: BorderSide(color: selected ? const Color(0xFFCFE3FA) : LeadsColors.line),
+        selectedColor: AppColors.softBlue,
+        side: BorderSide(color: selected ? const Color(0xFFCFE3FA) : AppColors.border),
         showCheckmark: false,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 4),
@@ -245,7 +245,7 @@ class EmptyLeads extends StatelessWidget {
       decoration: cardDecoration(),
       child: Column(
         children: [
-          const Icon(Icons.person_search_outlined, color: LeadsColors.forest, size: 34),
+          const Icon(Icons.person_search_outlined, color: AppColors.primary, size: 34),
           const SizedBox(height: 10),
           const Text(
             'No matching leads',
@@ -259,7 +259,7 @@ class EmptyLeads extends StatelessWidget {
           const Text(
             'Try another filter or add companies to your pipeline.',
             textAlign: TextAlign.center,
-            style: TextStyle(color: LeadsColors.muted, fontSize: 12),
+            style: TextStyle(color: AppColors.muted, fontSize: 12),
           ),
           const SizedBox(height: 13),
           FilledButton.icon(
@@ -288,7 +288,7 @@ class DemoNote extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const Icon(Icons.auto_awesome_rounded, color: LeadsColors.forest, size: 20),
+          const Icon(Icons.auto_awesome_rounded, color: AppColors.primary, size: 20),
           const SizedBox(width: 11),
           const Expanded(
             child: Column(
@@ -297,7 +297,7 @@ class DemoNote extends StatelessWidget {
                 Text(
                   'Turn company names into leads',
                   style: TextStyle(
-                    color: LeadsColors.deepForest,
+                    color: AppColors.navy,
                     fontSize: 12,
                     fontWeight: FontWeight.w700,
                   ),
@@ -305,7 +305,7 @@ class DemoNote extends StatelessWidget {
                 SizedBox(height: 3),
                 Text(
                   'Scrape, enrich with AI, and fill your lead sheet.',
-                  style: TextStyle(color: LeadsColors.muted, fontSize: 10),
+                  style: TextStyle(color: AppColors.muted, fontSize: 10),
                 ),
               ],
             ),
@@ -314,7 +314,7 @@ class DemoNote extends StatelessWidget {
             tooltip: 'Start enrichment',
             onPressed: onStart,
             style: IconButton.styleFrom(
-              backgroundColor: LeadsColors.forest,
+              backgroundColor: AppColors.primary,
               foregroundColor: Colors.white,
             ),
             icon: const Icon(Icons.arrow_forward_rounded, size: 18),

@@ -36,7 +36,7 @@ Color statusInk(LeadStatus status) => switch (status) {
 
 BoxDecoration cardDecoration() => BoxDecoration(
       color: Colors.white,
-      border: Border.all(color: LeadsColors.line),
+      border: Border.all(color: AppColors.border),
       borderRadius: BorderRadius.circular(21),
       boxShadow: const [
         BoxShadow(

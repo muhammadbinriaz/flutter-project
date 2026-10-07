@@ -18,7 +18,7 @@ extension _DashboardView on _LeadFlowHomeState {
                 value: '$_newLeads',
                 caption: 'Ready for outreach',
                 tint: const Color(0xFFE0F2FE),
-                iconColor: LeadsColors.forest,
+                iconColor: AppColors.primary,
               ),
             ),
             const SizedBox(width: 14),
@@ -107,7 +107,7 @@ extension _DashboardView on _LeadFlowHomeState {
         Text(
           '${weekdays[now.weekday - 1]}, ${now.day} ${months[now.month - 1]}',
           style: const TextStyle(
-            color: LeadsColors.muted,
+            color: AppColors.muted,
             fontSize: 10,
             fontWeight: FontWeight.w700,
             letterSpacing: 1.3,
@@ -126,14 +126,14 @@ extension _DashboardView on _LeadFlowHomeState {
               width: 52,
               height: 52,
               decoration: BoxDecoration(
-                color: LeadsColors.mint,
+                color: AppColors.softBlue,
                 borderRadius: BorderRadius.circular(17),
               ),
               alignment: Alignment.center,
               child: const Text(
                 'AK',
                 style: TextStyle(
-                  color: LeadsColors.forest,
+                  color: AppColors.primary,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -143,7 +143,7 @@ extension _DashboardView on _LeadFlowHomeState {
         const SizedBox(height: 7),
         const Text(
           "Here's what's happening with your leads.",
-          style: TextStyle(color: LeadsColors.muted, fontSize: 14),
+          style: TextStyle(color: AppColors.muted, fontSize: 14),
         ),
       ],
     );
@@ -154,11 +154,11 @@ extension _DashboardView on _LeadFlowHomeState {
     return Container(
       padding: const EdgeInsets.fromLTRB(24, 23, 24, 20),
       decoration: BoxDecoration(
-        color: LeadsColors.deepForest,
+        color: AppColors.navy,
         borderRadius: BorderRadius.circular(28),
         boxShadow: [
           BoxShadow(
-            color: LeadsColors.deepForest.withValues(alpha: 0.13),
+            color: AppColors.navy.withValues(alpha: 0.13),
             blurRadius: 24,
             offset: const Offset(0, 12),
           ),

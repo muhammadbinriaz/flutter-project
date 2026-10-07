@@ -75,14 +75,14 @@ extension _InsightsProfileView on _LeadFlowHomeState {
                 width: 56,
                 height: 56,
                 decoration: BoxDecoration(
-                  color: LeadsColors.mint,
+                  color: AppColors.softBlue,
                   borderRadius: BorderRadius.circular(18),
                 ),
                 alignment: Alignment.center,
                 child: const Text(
                   'AK',
                   style: TextStyle(
-                    color: LeadsColors.forest,
+                    color: AppColors.primary,
                     fontWeight: FontWeight.w800,
                     fontSize: 17,
                   ),
@@ -101,7 +101,7 @@ extension _InsightsProfileView on _LeadFlowHomeState {
                     ),
                   ),
                   SizedBox(height: 4),
-                  Text('Lead researcher', style: TextStyle(color: LeadsColors.muted)),
+                  Text('Lead researcher', style: TextStyle(color: AppColors.muted)),
                 ],
               ),
             ],

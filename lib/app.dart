@@ -11,31 +11,7 @@ class LeadsMvpApp extends StatelessWidget {
     return MaterialApp(
       title: 'Leads MVP',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-        scaffoldBackgroundColor: LeadsColors.canvas,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: LeadsColors.forest,
-          primary: LeadsColors.forest,
-          surface: Colors.white,
-        ),
-        fontFamily: 'Roboto',
-        textTheme: const TextTheme(
-          headlineMedium: TextStyle(
-            color: Color(0xFF172B4D),
-            fontSize: 27,
-            fontWeight: FontWeight.w700,
-            letterSpacing: -0.8,
-          ),
-          titleLarge: TextStyle(
-            color: Color(0xFF172B4D),
-            fontSize: 21,
-            fontWeight: FontWeight.w700,
-            letterSpacing: -0.4,
-          ),
-          bodyMedium: TextStyle(color: Color(0xFF52657A), fontSize: 14),
-        ),
-      ),
+      theme: buildAppTheme(),
       home: const LeadFlowHome(),
     );
   }

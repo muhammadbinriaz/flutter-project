@@ -17,7 +17,7 @@ extension _AppChromeBottom on _LeadFlowHomeState {
                 height: 16,
                 child: CircularProgressIndicator(
                   strokeWidth: 2,
-                  color: LeadsColors.forest,
+                  color: AppColors.primary,
                 ),
               ),
               const SizedBox(width: 10),
@@ -29,7 +29,7 @@ extension _AppChromeBottom on _LeadFlowHomeState {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: const TextStyle(
-                    color: LeadsColors.deepForest,
+                    color: AppColors.navy,
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
                   ),
@@ -38,7 +38,7 @@ extension _AppChromeBottom on _LeadFlowHomeState {
               Text(
                 '${(progress * 100).round()}%',
                 style: const TextStyle(
-                  color: LeadsColors.forest,
+                  color: AppColors.primary,
                   fontSize: 12,
                   fontWeight: FontWeight.w700,
                 ),
@@ -51,7 +51,7 @@ extension _AppChromeBottom on _LeadFlowHomeState {
             minHeight: 4,
             borderRadius: BorderRadius.circular(10),
             backgroundColor: const Color(0xFFD7EAFE),
-            color: LeadsColors.forest,
+            color: AppColors.primary,
           ),
         ],
       ),
@@ -71,7 +71,7 @@ extension _AppChromeBottom on _LeadFlowHomeState {
       padding: const EdgeInsets.symmetric(horizontal: 10),
       decoration: const BoxDecoration(
         color: Colors.white,
-        border: Border(top: BorderSide(color: LeadsColors.line)),
+        border: Border(top: BorderSide(color: AppColors.border)),
       ),
       child: Stack(
         clipBehavior: Clip.none,
@@ -89,14 +89,14 @@ extension _AppChromeBottom on _LeadFlowHomeState {
                       children: [
                         Icon(
                           icons[i],
-                          color: _selectedTab == i ? LeadsColors.forest : LeadsColors.muted,
+                          color: _selectedTab == i ? AppColors.primary : AppColors.muted,
                           size: 23,
                         ),
                         const SizedBox(height: 5),
                         Text(
                           labels[i],
                           style: TextStyle(
-                            color: _selectedTab == i ? LeadsColors.forest : LeadsColors.muted,
+                            color: _selectedTab == i ? AppColors.primary : AppColors.muted,
                             fontSize: 10,
                             fontWeight: _selectedTab == i
                                 ? FontWeight.w700
@@ -118,9 +118,9 @@ extension _AppChromeBottom on _LeadFlowHomeState {
               child: Transform.translate(
                 offset: const Offset(0, -15),
                 child: Material(
-                  color: LeadsColors.forest,
+                  color: AppColors.primary,
                   elevation: 7,
-                  shadowColor: LeadsColors.forest.withValues(alpha: 0.3),
+                  shadowColor: AppColors.primary.withValues(alpha: 0.3),
                   borderRadius: BorderRadius.circular(18),
                   child: InkWell(
                     onTap: _openCampaignSheet,

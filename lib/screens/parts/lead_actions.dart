@@ -175,8 +175,8 @@ extension _LeadActions on _LeadFlowHomeState {
               const ListTile(
                 contentPadding: EdgeInsets.zero,
                 leading: CircleAvatar(
-                  backgroundColor: LeadsColors.mint,
-                  child: Icon(Icons.bolt_rounded, color: LeadsColors.forest),
+                  backgroundColor: AppColors.softBlue,
+                  child: Icon(Icons.bolt_rounded, color: AppColors.primary),
                 ),
                 title: Text('Your lead workspace is ready'),
                 subtitle: Text('Add company names to start an enrichment run.'),

@@ -58,7 +58,7 @@ class _CampaignSheetState extends State<CampaignSheet> {
             const SizedBox(height: 5),
             const Text(
               'Add companies or websites. We’ll scrape and enrich each one.',
-              style: TextStyle(color: LeadsColors.muted, fontSize: 12),
+              style: TextStyle(color: AppColors.muted, fontSize: 12),
             ),
             const SizedBox(height: 20),
             const Text(
@@ -80,20 +80,20 @@ class _CampaignSheetState extends State<CampaignSheet> {
                 hintText: 'Acme Corp\nGlobex\nhttps://initech.io',
                 alignLabelWithHint: true,
                 filled: true,
-                fillColor: LeadsColors.canvas,
+                fillColor: AppColors.background,
                 errorText: _error,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
-                  borderSide: const BorderSide(color: LeadsColors.line),
+                  borderSide: const BorderSide(color: AppColors.border),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
-                  borderSide: const BorderSide(color: LeadsColors.line),
+                  borderSide: const BorderSide(color: AppColors.border),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
                   borderSide: const BorderSide(
-                    color: LeadsColors.forest,
+                    color: AppColors.primary,
                     width: 1.4,
                   ),
                 ),
@@ -104,14 +104,14 @@ class _CampaignSheetState extends State<CampaignSheet> {
               children: [
                 Icon(
                   Icons.auto_awesome_rounded,
-                  color: LeadsColors.forest,
+                  color: AppColors.primary,
                   size: 15,
                 ),
                 SizedBox(width: 6),
                 Expanded(
                   child: Text(
                     'Scraper + Groq AI · results fill your lead sheet',
-                    style: TextStyle(color: LeadsColors.muted, fontSize: 10),
+                    style: TextStyle(color: AppColors.muted, fontSize: 10),
                   ),
                 ),
               ],
@@ -139,7 +139,7 @@ class _CampaignSheetState extends State<CampaignSheet> {
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 style: FilledButton.styleFrom(
-                  backgroundColor: LeadsColors.forest,
+                  backgroundColor: AppColors.primary,
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
@@ -190,11 +190,11 @@ class LeadDetailsSheet extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 26,
-                backgroundColor: LeadsColors.mint,
+                backgroundColor: AppColors.softBlue,
                 child: Text(
                   lead.initials,
                   style: const TextStyle(
-                    color: LeadsColors.forest,
+                    color: AppColors.primary,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
@@ -214,7 +214,7 @@ class LeadDetailsSheet extends StatelessWidget {
                     ),
                     Text(
                       lead.company,
-                      style: const TextStyle(color: LeadsColors.muted),
+                      style: const TextStyle(color: AppColors.muted),
                     ),
                   ],
                 ),
@@ -286,7 +286,7 @@ class DetailRow extends StatelessWidget {
             child: Text(
               label,
               style: const TextStyle(
-                color: LeadsColors.muted,
+                color: AppColors.muted,
                 fontSize: 12,
                 fontWeight: FontWeight.w600,
               ),

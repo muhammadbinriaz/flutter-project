@@ -34,11 +34,11 @@ extension _LeadsView on _LeadFlowHomeState {
               fillColor: Colors.white,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(16),
-                borderSide: const BorderSide(color: LeadsColors.line),
+                borderSide: const BorderSide(color: AppColors.border),
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(16),
-                borderSide: const BorderSide(color: LeadsColors.line),
+                borderSide: const BorderSide(color: AppColors.border),
               ),
             ),
           ),
@@ -76,7 +76,7 @@ extension _LeadsView on _LeadFlowHomeState {
                 tooltip: 'Search leads',
                 onPressed: () => _refresh(() => _searchVisible = true),
                 style: IconButton.styleFrom(
-                  side: const BorderSide(color: LeadsColors.line),
+                  side: const BorderSide(color: AppColors.border),
                   backgroundColor: Colors.white,
                 ),
                 icon: const Icon(Icons.search_rounded),

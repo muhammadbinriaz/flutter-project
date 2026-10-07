@@ -7,7 +7,7 @@ extension _AppChromeTop on _LeadFlowHomeState {
       padding: const EdgeInsets.symmetric(horizontal: 26),
       decoration: const BoxDecoration(
         color: Colors.white,
-        border: Border(bottom: BorderSide(color: LeadsColors.line)),
+        border: Border(bottom: BorderSide(color: AppColors.border)),
       ),
       child: Row(
         children: [
@@ -15,7 +15,7 @@ extension _AppChromeTop on _LeadFlowHomeState {
             width: 44,
             height: 44,
             decoration: BoxDecoration(
-              color: LeadsColors.forest,
+              color: AppColors.primary,
               borderRadius: BorderRadius.circular(14),
             ),
             alignment: Alignment.center,
@@ -47,7 +47,7 @@ extension _AppChromeTop on _LeadFlowHomeState {
               Text(
                 'L E A D   F L O W',
                 style: TextStyle(
-                  color: LeadsColors.muted,
+                  color: AppColors.muted,
                   fontSize: 8,
                   fontWeight: FontWeight.w700,
                   letterSpacing: 0.8,
@@ -61,7 +61,7 @@ extension _AppChromeTop on _LeadFlowHomeState {
             onPressed: _showNotifications,
             style: IconButton.styleFrom(
               foregroundColor: const Color(0xFF52657A),
-              side: const BorderSide(color: LeadsColors.line),
+              side: const BorderSide(color: AppColors.border),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(14),
               ),
